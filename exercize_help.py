@@ -22,7 +22,8 @@ print()
 
 # Print the help of the .numerator method.
 from fractions import Fraction  # This should be up top, i'm keeping it here to bundle it with the exercise.
-a = Fraction(1,2)
+a = Fraction(1, 2)
 print(type(a))
 print(a)
 print(help(a.numerator))
+print(help(Fraction(2, 3).numerator))
