@@ -1,7 +1,6 @@
 # Four exercises to practise the format method.
 print()
 
-
 name = 'Phillip'
 age = 42
 print('{} is {}'.format(name, age))
