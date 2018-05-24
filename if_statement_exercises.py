@@ -11,5 +11,18 @@ elif int(not_leap_year) == bool(False):
 
 print()
 
-print(leap_year, "'If Tue it is a leap year.'")
-print(not_leap_year, "'If False it is not a leap year.'")
+print(leap_year, ": 'If Tue it is a leap year.'")
+print(not_leap_year, ": 'If False it is not a leap year.'")
+
+print()
+print('-' * 50)
+print()
+
+
+print('Enter a number to see if it is even or odd: ')
+a = input()
+odd_even = int(a) % 2
+if int(odd_even) == 0:
+    print("This is an even number.")
+elif int(odd_even) == 1:
+    print("This is an odd number.")
