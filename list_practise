@@ -1,0 +1,35 @@
+# Practising with lists
+
+
+names = ['Phillip', 'Jamie', 'Sis', 'Gilbert', 'John']
+print(names)
+print(names[2])
+
+names.insert(3, 'Ralph')
+print(names)
+
+names_sorted = sorted(names)
+print(names_sorted)
+print(names)
+print('Jamie' in names)
+print('Franco' in names)
+
+print()
+print('-' * 50)
+print()
+
+
+# Practising with sets. Good way to get rid of double entries.
+
+
+digits = [0, 1, 1, 1, 2, 2, 3, 4, 5, 6, 7, 8, 8, 9]
+print(digits)
+digit_set = set(digits)
+print(digit_set)
+
+m_names = ['Phillip', 'Gilbert', 'Gilbert', 'John']
+print(m_names)
+set_names = set(m_names)
+print(set_names)
+set_names_1 = sorted(set_names)
+print(set_names_1)
