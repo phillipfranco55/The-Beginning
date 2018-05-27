@@ -1,4 +1,6 @@
 
+line = '-' * 100
+
 print()
 my_cat = 'cat'
 cat = list(my_cat)
@@ -46,3 +48,43 @@ for item in numbers:
         continue
     result += item
 print(result)
+
+print('-' * 100)
+
+names = ["John", 'Paul', 'George', 'Ringo']
+names_to_remove = []
+for name in names:
+    if name not in ['John', 'Paul']:
+        names_to_remove.append(name)
+for name in names_to_remove:
+    names.remove(name)
+print(names)
+print()
+# Another way to remove names is to use slice.
+beatle_names = ['John', 'Paul', 'George', 'Ringo']
+for name in beatle_names[:]:  # Copy of names.
+    if name not in ['John', 'Paul']:
+        beatle_names.remove(name)
+print(beatle_names)
+
+print('-' * 100)
+
+items = [1, 3, 5, 7, 9]
+positive = False
+for num in items:
+    if num > 0:
+        break
+else:
+    positive = True
+print(positive)
+print(num)
+
+print(line)
+
+n = 100
+while n > 0:
+    print(n)
+    n = n - 20
+print(type(n))
+print(n)
+list(n)
